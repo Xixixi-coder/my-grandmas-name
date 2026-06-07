@@ -1,0 +1,78 @@
+.output {
+  padding: 48rpx;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.page-title {
+  display: block;
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: 300;
+  margin-bottom: 48rpx;
+}
+
+.person-row {
+  padding-bottom: 32rpx;
+  margin-bottom: 32rpx;
+  border-bottom: 1px solid #44403c;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.person-meta {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  margin-bottom: 12rpx;
+}
+
+.person-label {
+  font-size: 24rpx;
+  color: #78716c;
+}
+
+.era-tag {
+  font-size: 20rpx;
+  color: #d97706;
+}
+
+.person-name {
+  display: block;
+  font-size: 40rpx;
+  margin-bottom: 8rpx;
+
+  &.grandma { color: #8B7355; }
+  &.mother { color: #6B8E6B; }
+  &.self { color: #e7e5e4; }
+}
+
+.person-wish {
+  font-size: 26rpx;
+  color: #a8a29e;
+}
+
+.actions {
+  margin-top: 48rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+
+.ending-card {
+  margin-top: 48rpx;
+  background: rgba(41, 37, 36, 0.5);
+  border-radius: 24rpx;
+  padding: 40rpx;
+}
+
+.ending-text {
+  font-size: 26rpx;
+  color: #78716c;
+  text-align: center;
+  line-height: 1.8;
+}

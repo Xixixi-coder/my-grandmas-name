@@ -1,0 +1,142 @@
+.flow {
+  min-height: 100vh;
+  padding: 120rpx 48rpx 48rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.progress {
+  position: fixed;
+  top: 80rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12rpx;
+  z-index: 100;
+
+  .dot {
+    width: 16rpx;
+    height: 8rpx;
+    border-radius: 4rpx;
+    background: #44403c;
+    transition: all 0.3s;
+
+    &.done {
+      width: 48rpx;
+      background: #fbbf24;
+    }
+    &.active {
+      width: 32rpx;
+      background: #d97706;
+    }
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  animation: fadeUp 0.4s ease;
+}
+
+.prompt {
+  font-size: 36rpx;
+  color: #e7e5e4;
+  margin-bottom: 48rpx;
+  text-align: center;
+}
+
+.hint {
+  font-size: 26rpx;
+  color: #78716c;
+  margin-bottom: 32rpx;
+}
+
+.era-label {
+  font-size: 22rpx;
+  color: #d97706;
+  margin-bottom: 16rpx;
+}
+
+.options {
+  width: 100%;
+  margin-bottom: 32rpx;
+
+  .option {
+    padding: 28rpx 32rpx;
+    border: 1px solid #44403c;
+    border-radius: 20rpx;
+    margin-bottom: 16rpx;
+    color: #d6d3d1;
+    font-size: 28rpx;
+    transition: all 0.2s;
+
+    &.selected {
+      border-color: #d97706;
+      background: rgba(217, 119, 6, 0.1);
+      color: #fde68a;
+    }
+  }
+}
+
+.textarea {
+  width: 100%;
+  min-height: 200rpx;
+  background: rgba(41, 37, 36, 0.5);
+  border: 1px solid #44403c;
+  border-radius: 20rpx;
+  padding: 24rpx;
+  color: #e7e5e4;
+  font-size: 28rpx;
+  margin-bottom: 32rpx;
+  box-sizing: border-box;
+}
+
+.error {
+  color: #f87171;
+  font-size: 24rpx;
+  margin-top: 8rpx;
+}
+
+.back-btn {
+  position: fixed;
+  bottom: 48rpx;
+  left: 48rpx;
+  color: #78716c;
+  font-size: 26rpx;
+}
+
+.generate {
+  gap: 32rpx;
+}
+
+.gen-item {
+  text-align: center;
+}
+
+.gen-name {
+  font-size: 48rpx;
+  display: block;
+  margin-bottom: 8rpx;
+
+  &.grandma { color: #8B7355; }
+  &.mother { color: #6B8E6B; }
+  &.self { color: #e7e5e4; }
+}
+
+.gen-wish {
+  font-size: 26rpx;
+  color: #78716c;
+}
+
+.arrow {
+  color: #44403c;
+  font-size: 32rpx;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30rpx); }
+  to { opacity: 1; transform: translateY(0); }
+}

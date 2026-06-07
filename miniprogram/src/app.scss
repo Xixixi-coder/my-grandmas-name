@@ -1,0 +1,72 @@
+page {
+  background-color: #000;
+  color: #e7e5e4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', sans-serif;
+  min-height: 100vh;
+}
+
+.text-amber {
+  color: #d97706;
+}
+
+.text-stone-200 {
+  color: #e7e5e4;
+}
+
+.text-stone-300 {
+  color: #d6d3d1;
+}
+
+.text-stone-400 {
+  color: #a8a29e;
+}
+
+.text-stone-500 {
+  color: #78716c;
+}
+
+.text-stone-600 {
+  color: #57534e;
+}
+
+.btn-primary {
+  background: #d97706;
+  color: #fff;
+  border-radius: 48rpx;
+  padding: 24rpx 48rpx;
+  font-size: 28rpx;
+  border: none;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #a8a29e;
+  border: 1px solid #44403c;
+  border-radius: 48rpx;
+  padding: 24rpx 48rpx;
+  font-size: 28rpx;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.card {
+  background: #292524;
+  border-radius: 32rpx;
+  padding: 48rpx;
+}
+
+.input-line {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #44403c;
+  color: #e7e5e4;
+  font-size: 36rpx;
+  padding: 24rpx 16rpx;
+  width: 100%;
+}
+
+.input-line:focus {
+  border-bottom-color: #d97706;
+}
