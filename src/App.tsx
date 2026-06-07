@@ -4,9 +4,11 @@ import { ArchaeologyFlow } from './pages/ArchaeologyFlow';
 import { CompletionMode } from './pages/CompletionMode';
 import { OutputPage } from './pages/OutputPage';
 
+const basename = import.meta.env.BASE_URL;
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/flow" element={<ArchaeologyFlow />} />
